@@ -25,6 +25,10 @@
         border-radius: 50px;
         padding:10px 30px;
         margin: 20% 0 15% 0;
+        transition: opacity 250ms ease-in-out, color 250ms ease-in-out;
+    }
+    .car-button:hover{
+        opacity: 80%;
     }
 
     .sedans{
@@ -34,6 +38,50 @@
         color: hsl(31, 77%, 52%);
     }
 
+    .suvs{
+        background-color: hsl(184, 100%, 22%);
+    }
+    .suvs-btn{
+        color: hsl(184, 100%, 22%);
+    }
+
+    .luxury{
+        background-color: hsl(179, 100%, 13%);
+    }
+    .luxury-btn{
+        color: hsl(179, 100%, 13%);
+    }
+
     .car{
         color: white;
+    }
+
+    .car-sedans{
+        border-radius: 10px 0 0 10px;
+    }
+
+    .car-luxury{
+        border-radius: 0 10px 10px 0;
+    }
+
+    .car-container{
+        display:flex; 
+        flex-direction: row;
+        justify-content:center 
+    }
+
+    @media(max-width: 800px){
+
+        .car-container{
+            display:flex; 
+            flex-direction: column;
+            align-items:center  
+        }
+        .car-sedans{
+            border-radius: 10px 10px 0 0;
+        }
+    
+        .car-luxury{
+            border-radius: 0 0 10px 10px;
+        }
     }
